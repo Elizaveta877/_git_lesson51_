@@ -1,16 +1,44 @@
-# React + Vite
+# Короткий опис проекту
+Цей проект є навчальним React-додатком, розробленим для демонстрації навичок роботи з популярними бібліотеками екосистеми React. Основний фокус зроблено на створенні інтерактивного інтерфейсу адміністратора з наступними функціями:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Моніторинг активності: Відстеження неактивності користувача в реальному часі за допомогою таймера.
 
-Currently, two official plugins are available:
+Система сповіщень: Інтерактивні спливаючі повідомлення для зворотного зв'язку з користувачем.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Сучасний UI: Використання професійних іконок для візуалізації елементів керування.
 
-## React Compiler
+Використані технології
+React — бібліотека для побудови інтерфейсу.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Icons — для відображення іконки адміністратора та інших графічних елементів.
 
-## Expanding the ESLint configuration
+React Toastify — для створення стильних сповіщень при взаємодії з кнопками.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React Idle Timer — для реалізації логіки відстеження неактивності користувача та автоматичного відліку часу.
+
+# Як працює додаток
+Таймер неактивності: Якщо ви не будете рухати мишкою або натискати клавіші протягом 5 секунд, статус зміниться на "НЕАКТИВНИЙ", а фон стане червоним.
+
+Кнопка сповіщення: Натисніть на кнопку "Перевірити сповіщення", щоб побачити роботу бібліотеки Toastify.
+Інструкції зі встановлення та запуску
+Щоб запустити цей проект локально, виконайте наступні кроки:
+
+Клонуйте репозиторій:
+
+Bash
+git clone https://github.com/vash-username/vash-repo-name.git
+cd vash-repo-name
+Встановіть необхідні залежності: Переконайтеся, що у вас встановлено Node.js. Виконайте команду:
+
+Bash
+npm install
+Ця команда встановить React, Vite, React Icons, Toastify та Idle Timer.
+
+Запустіть проект у режимі розробки:
+
+Bash
+npm run dev
+Відкрийте додаток: Після запуску перейдіть за адресою, вказаною у вашому терміналі (зазвичай http://localhost:5173).
+
+Посилання на демо-версію
+Ви можете переглянути працюючу версію проекту за посиланням нижче:
